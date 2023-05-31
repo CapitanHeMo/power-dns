@@ -4,6 +4,7 @@ services:
   db:
     image: mariadb:latest
     environment:
+      - MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=yes
       - MARIADB_ROOT_PASSWORD=mysqlrootpw
       - MARIADB_REPLICATION_MODE=master
       - MARIADB_REPLICATION_USER=repl_user
