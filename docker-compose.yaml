@@ -24,8 +24,8 @@ services:
     links:
       - "db:mysql"
     ports:
-      - "53:53"
-      - "53:53/udp"
+      - "54:53"
+      - "54:53/udp"
       - "8081:8081"
     environment:
       - PDNS_gmysql_host=db
