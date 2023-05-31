@@ -2,7 +2,7 @@ version: '2'
 
 services:
   db:
-    image: mariadb:latest
+    image: bitnami/mariadb:10.7.4-debian-11-r1
     environment:
       - MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=yes
       - MARIADB_ROOT_PASSWORD=mysqlrootpw
